@@ -47,7 +47,7 @@
     <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between gap-3">
       <!-- Brand -->
       <a href="#top" class="flex items-center gap-3">
-        <img src="./imgs/FootHealthcare_logo.png" alt="Foot Health Logo"
+        <img src="./assets/imgs/favicon/favicon.ico" alt="Foot Health Logo"
             class="w-14 h-14 rounded-full bg-brand-50 shadow-soft object-cover" />
         <span class="font-extrabold tracking-wider">FOOT HEALTH BY EMMA</span>
       </a>
@@ -117,7 +117,7 @@
       <!-- Image -->
       <div class="lg:col-span-5">
         <figure class="relative rounded-xl2 overflow-hidden border border-brand-100 shadow-soft">
-            <img src="./imgs/heathcare_image_1.png" alt="Practitioner caring for elderly patient's foot in a calm, professional setting" />
+            <img src="./assets/imgs/heathcare_image_1.png" alt="Practitioner caring for elderly patient's foot in a calm, professional setting" />
           <figcaption class="sr-only">Friendly foot care in a bright, comfortable space.</figcaption>
         </figure>
       </div>
@@ -247,7 +247,7 @@
   </section>
 
   <footer role="contentinfo" class="border-t border-brand-100 bg-white">
-    <div class="max-w-7xl mx-auto px-5 py-10 text-slate-700 text-sm sm:text-base grid gap-6 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
+    <div class="max-w-7xl mx-auto px-5 py-10 text-slate-700 text-sm sm:text-base grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:place-items-center">
       
       <!-- Contact Info -->
       <div>
@@ -270,17 +270,13 @@
             <button onclick="openModal('terms-modal')" class="hover:underline">Terms & Conditions</button>
           </li>
         </ul>
-        <!-- <ul class="space-y-1">
-          <li><a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions.html" class="hover:underline">Terms & Conditions</a></li>
-        </ul> -->
       </div>
 
       <!-- Social Media -->
       <div>
         <p class="font-semibold mb-2">Follow Us</p>
         <div class="flex space-x-4">
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="hover:text-brand-700">
+          <a href="https://www.facebook.com/p/Foot-Health-By-Emma-61565194055776/" target="_blank" aria-label="Facebook" class="hover:text-brand-700">
             <!-- Facebook SVG -->
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
               <path d="M22 12a10 10 0 10-11.6 9.9v-7H8v-2.9h2.4v-2.2c0-2.3 1.4-3.6 3.5-3.6.7 0 1.5.1 1.5.1v2.1h-1c-1 0-1.3.6-1.3 1.2v1.4h2.6L15.6 15h-2v7A10 10 0 0022 12z"/>
@@ -318,7 +314,7 @@
   <!-- Privacy Policy Modal -->
   <div id="privacy-modal" class="fixed inset-0 z-50 hidden overflow-y-auto flex items-start justify-center p-6 pt-24">
     <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 relative">
-      <button onclick="closeModal()" class="absolute top-3 right-3 text-slate-500 hover:text-slate-800 text-2xl font-bold">&times;</button>
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-slate-500 text-2xl font-bold hover:text-brand-700">&times;</button>
       <h2 class="text-2xl font-semibold mb-4">Privacy Policy</h2>
       <p class="mb-4">Effective Date: August 31, 2025</p>
       <p class="mb-4">We respect your privacy. This Privacy Policy outlines how Foot Health collects, uses, and protects any information you provide when using our website.</p>
@@ -342,7 +338,7 @@
   <!-- Terms & Conditions Modal -->
   <div id="terms-modal" class="fixed inset-0 z-50 hidden overflow-y-auto flex items-start justify-center p-6 pt-24">
     <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 relative">
-      <button onclick="closeModal()" class="absolute top-3 right-3 text-slate-500 hover:text-slate-800 text-2xl font-bold">&times;</button>
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-slate-500 text-2xl font-bold hover:text-brand-700">&times;</button>
       <h2 class="text-2xl font-semibold mb-4">Terms & Conditions</h2>
       <p class="mb-4">Effective Date: August 31, 2025</p>
       <p class="mb-4">By using our website, you agree to these Terms and Conditions. Please read them carefully.</p>
@@ -358,70 +354,12 @@
     </div>
   </div>
 
-
   <script>
-    // Accessible toggle for mobile nav
-    const btn = document.getElementById('navToggle');
-    const panel = document.getElementById('mobileNav');
-    const openIcon = document.getElementById('iconOpen');
-    const closeIcon = document.getElementById('iconClose');
-
-    const mobileHeader = document.getElementById('mobileNav');
-
-    function setOpen(isOpen) {
-      panel.dataset.open = isOpen ? 'true' : 'false';
-      btn.setAttribute('aria-expanded', String(isOpen));
-      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-      openIcon.classList.toggle('hidden', isOpen);
-      closeIcon.classList.toggle('hidden', !isOpen);
-      mobileHeader.classList.toggle('hidden', !isOpen);
-    }
-
-    setOpen(false);
-
-    btn.addEventListener('click', () => setOpen(panel.dataset.open !== 'true'));
-
-    // Close when clicking a link or outside
-    panel.addEventListener('click', (e) => {
-      if (e.target.tagName === 'A') setOpen(false);
-    });
-    document.addEventListener('click', (e) => {
-      if (!panel.contains(e.target) && !btn.contains(e.target)) setOpen(false);
-    });
-
-    // Close on Escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') setOpen(false);
-    });
-
-    function handleSubmit(e){
-      e.preventDefault();
-      const status = document.getElementById('formStatus');
-      status.textContent = 'Thank you! Your request has been received. I will reply shortly.';
-      e.target.querySelector('button[type="submit"]').disabled = true;
-      return false;
-    }
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 
-  <script>
-    function openModal(id) {
-      document.getElementById('modal-overlay').classList.remove('hidden');
-      document.getElementById(id).classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
-    }
+  <script src="./assets/js/header.js"></script>
+  <script src="./assets/js/modals.js"></script>
 
-    function closeModal() {
-      document.getElementById('modal-overlay').classList.add('hidden');
-      document.getElementById('privacy-modal').classList.add('hidden');
-      document.getElementById('terms-modal').classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-    }
-
-    // Close on ESC key
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeModal();
-    });
-  </script>
 </body>
 </html>
