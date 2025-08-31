@@ -31,11 +31,3 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') setOpen(false);
 });
-
-function handleSubmit(e){
-  e.preventDefault();
-  const status = document.getElementById('formStatus');
-  status.textContent = 'Thank you! Your request has been received. I will reply shortly.';
-  e.target.querySelector('button[type="submit"]').disabled = true;
-  return false;
-}

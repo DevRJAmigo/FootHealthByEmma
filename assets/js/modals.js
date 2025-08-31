@@ -8,6 +8,7 @@ function closeModal() {
   document.getElementById('modal-overlay').classList.add('hidden');
   document.getElementById('privacy-modal').classList.add('hidden');
   document.getElementById('terms-modal').classList.add('hidden');
+  document.getElementById('success-modal').classList.add('hidden');
   document.body.classList.remove('overflow-hidden');
 }
 
