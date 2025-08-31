@@ -377,7 +377,7 @@
       <h3 class="text-xl font-bold mb-2">Thank you!</h3>
       <p class="text-slate-700 mb-4">Your request has been sent. I'll be in touch shortly.</p>
       <p class="text-slate-700 mb-4">If you do not hear back from me in 24 hours, then feel free to call.</p>
-      <button onclick="closeModal()" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-full mt-5">Close</button>
+      <button onclick="closeModal()" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-full">Close</button>
     </div>
   </div>
 
@@ -394,6 +394,9 @@
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      openModal('success-modal');
+      return;
 
       const formData = new FormData(form);
 
