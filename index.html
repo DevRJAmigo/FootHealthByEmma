@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Foot Health - Caring for your feet, one step at a time</title>
   <meta name="description" content="Foot health practitioner in Newport, South Wales offering gentle, professional foot care. Home visits available. Book online or by phone." />
-  <link rel="icon" type="image/x-icon" href="./imgs/favicon/favicon.ico">
+  <link rel="icon" href="./assets/imgs/favicon/favicon.ico" type="image/x-icon">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -187,16 +187,6 @@
     </div>
   </section>
 
-  <label class="flex items-start gap-3 cursor-pointer select-none">
-    <input type="checkbox" class="peer sr-only" required />
-    <div class="mt-1 h-5 w-5 shrink-0 rounded border-2 border-brand-500 bg-white peer-checked:bg-brand-500 peer-checked:border-brand-600 flex items-center justify-center transition-colors">
-      <!-- Tick icon (inline SVG) -->
-      <svg class="h-3 w-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </div>
-  </label>
-
   <!-- Contact / Booking Form -->
   <section id="contact" class="py-10">
     <div class="max-w-4xl mx-auto px-5 ">
@@ -357,6 +347,7 @@
       <h3 class="font-semibold mt-4 mb-2">Data Protection</h3>
       <p class="mb-4">We implement appropriate technical and organizational measures to secure your data.</p>
       <p>Contact: <a href="mailto:hello@example.com" class="text-brand-700 hover:underline">hello@example.com</a></p>
+      <button onclick="closeModal()" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-full mt-5">Close</button>
     </div>
   </div>
 
@@ -376,6 +367,7 @@
       <h3 class="font-semibold mt-4 mb-2">Changes</h3>
       <p class="mb-4">We reserve the right to update these terms at any time without notice.</p>
       <p>Contact: <a href="mailto:hello@example.com" class="text-brand-700 hover:underline">hello@example.com</a></p>
+      <button onclick="closeModal()" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-full mt-5">Close</button>
     </div>
   </div>
 
@@ -385,7 +377,7 @@
       <h3 class="text-xl font-bold mb-2">Thank you!</h3>
       <p class="text-slate-700 mb-4">Your request has been sent. I'll be in touch shortly.</p>
       <p class="text-slate-700 mb-4">If you do not hear back from me in 24 hours, then feel free to call.</p>
-      <button onclick="closeModal()" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-full">Close</button>
+      <button onclick="closeModal()" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-full mt-5">Close</button>
     </div>
   </div>
 
