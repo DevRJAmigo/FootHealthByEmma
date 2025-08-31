@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foot Health - Caring for your feet, one step at a time</title>
+  <meta name="description" content="Foot health practitioner offering gentle, professional foot care. Home visits available. Book online or by phone." />
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon/favicon.ico">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#effafa',
+              100: '#d8f0f0',
+              300: '#9cdad8',
+              500: '#2aa3a5',
+              600: '#1f8586',
+              700: '#156b6c'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 20px rgba(0,0,0,.06)'
+          },
+          borderRadius: { xl2: '1.25rem' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-size: 19px; }
+    @media (max-width: 720px){ html { font-size: 18px; } }
+  </style>
+</head>
+<body class="text-slate-900 antialiased bg-gradient-to-b from-brand-100 via-white to-brand-50">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-brand-100">
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between gap-3">
+      <!-- Brand -->
+      <a href="#top" class="flex items-center gap-3">
+        <img src="./imgs/FootHealthcare_logo.png" alt="Foot Health logo"
+            class="w-14 h-14 rounded-full bg-brand-50 shadow-soft object-cover" />
+        <span class="font-extrabold tracking-wider">FOOT HEALTH</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav aria-label="Main" class="hidden lg:block">
+        <ul class="flex flex-wrap gap-6 font-semibold">
+          <li><a class="hover:text-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-300 rounded-md px-1" href="#services">Services</a></li>
+          <li><a class="hover:text-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-300 rounded-md px-1" href="#how">How it works</a></li>
+          <li><a class="hover:text-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-300 rounded-md px-1" href="#about">About</a></li>
+          <li><a class="hover:text-brand-700 focus:outline-none focus:ring-4 focus:ring-brand-300 rounded-md px-1" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button id="navToggle"
+              class="lg:hidden inline-flex items-center justify-center p-3 rounded-lg border border-brand-100 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300"
+              aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+        <!-- Hamburger / Close icons -->
+        <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav panel -->
+    <nav id="mobileNav" aria-label="Mobile" class="lg:hidden origin-top scale-y-0 opacity-0 pointer-events-none
+                                        transition-all duration-200 ease-out
+                                        data-[open=true]:pointer-events-auto data-[open=true]:opacity-100 data-[open=true]:scale-y-100
+                                        border-t border-brand-100 bg-white">
+      <ul class="px-5 py-3 space-y-2 text-lg font-semibold">
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300" href="#services">Services</a></li>
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300" href="#how">How it works</a></li>
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300" href="#about">About</a></li>
+        <li><a class="block rounded-lg px-3 py-2 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-12 gap-10 items-center">
+      <!-- Text -->
+      <div class="lg:col-span-7 bg-white border border-brand-100 rounded-xl2 p-6 shadow-soft">
+        <p class="uppercase tracking-widest font-extrabold text-brand-700 text-sm">Caring for your feet</p>
+        <h1 class="mt-2 text-4xl/tight sm:text-5xl/tight font-extrabold">Gentle, professional foot care — one step at a time</h1>
+        <p class="mt-3 text-slate-600 text-[1.1rem] max-w-prose">Qualified foot health practitioner. Flexible bookings, patient explanations, and home visits available so you can relax in comfort.</p>
+
+        <ul class="mt-5 grid sm:grid-cols-3 gap-3">
+          <li class="flex items-start gap-3 bg-white border border-brand-100 rounded-2xl p-3 shadow-soft"><span class="mt-1 inline-block w-6 h-6 rounded-full bg-brand-500"></span><div><p class="font-bold">Qualified & insured</p><p class="text-slate-600">Clear, simple guidance.</p></div></li>
+          <li class="flex items-start gap-3 bg-white border border-brand-100 rounded-2xl p-3 shadow-soft"><span class="mt-1 inline-block w-6 h-6 rounded-full bg-brand-600"></span><div><p class="font-bold">7‑day booking</p><p class="text-slate-600">Times that suit you.</p></div></li>
+          <li class="flex items-start gap-3 bg-white border border-brand-100 rounded-2xl p-3 shadow-soft"><span class="mt-1 inline-block w-6 h-6 rounded-full bg-brand-700"></span><div><p class="font-bold">Home visits</p><p class="text-slate-600">Care in your own home.</p></div></li>
+        </ul>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center rounded-full px-5 py-3 font-extrabold text-white bg-brand-500 hover:bg-brand-600 focus:outline-none focus:ring-4 focus:ring-brand-300">Book an appointment</a>
+          <a href="tel:+000000000" class="inline-flex items-center justify-center rounded-full px-5 py-3 font-extrabold border-2 border-brand-600 text-brand-700 bg-white hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300">Call now</a>
+        </div>
+        <p class="mt-2 text-slate-600">Prefer to speak to someone? Call and we'll book for you.</p>
+      </div>
+
+      <!-- Image -->
+      <div class="lg:col-span-5">
+        <figure class="relative rounded-xl2 overflow-hidden border border-brand-100 shadow-soft">
+            <img src="./imgs/heathcare_image_1.png" alt="Practitioner caring for elderly patient's foot in a calm, professional setting" />
+          <figcaption class="sr-only">Friendly foot care in a bright, comfortable space.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section id="services" class="py-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-3xl font-extrabold">Services</h2>
+      <p class="mt-2 text-slate-600 max-w-3xl">From routine foot care to gentle treatment of common problems. If you're unsure what you need, just ask — I'll guide you.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <article class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+          <h3 class="font-bold text-xl pb-5">Routine foot care</h3>
+          <p class="text-slate-600 pb-3">Nail cutting, filing, reduction of hard skin and corns, plus advice to keep feet comfortable.</p>
+        </article>
+        <article class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+          <h3 class="font-bold text-xl pb-5">Ingrown & problem nails</h3>
+          <p class="text-slate-600 pb-3">Careful, hygienic management to reduce pain and prevent recurrence.</p>
+        </article>
+        <article class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+          <h3 class="font-bold text-xl pb-5">Diabetic foot checks</h3>
+          <p class="text-slate-600 pb-3">Simple, clear screening and education to keep feet healthy at home.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="py-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-3xl font-extrabold">How it works</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <article class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+          <h3 class="font-bold text-xl pb-5">1) Book</h3>
+          <p class="text-slate-600 pb-3">Choose a day and time that suits you - 7 days a week.</p></article>
+        <article class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+          <h3 class="font-bold text-xl pb-5">2) Choose location</h3>
+          <p class="text-slate-600 pb-3">Visit a nearby clinic room or I can come to your home.</p></article>
+        <article class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+          <h3 class="font-bold text-xl pb-5">3) Relax</h3>
+          <p class="text-slate-600 pb-3">Sit back while I care for your feet and share simple after-care tips.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-10">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-5 place-items-stretch">
+      <div>
+        <h2 class="text-3xl font-extrabold">About the practitioner</h2>
+        <p class="mt-2 text-slate-600 max-w-prose">Friendly, patien-centred foot care. I take time to explain what I'm doing and why, in plain language. My goal is comfort — and confidence with every step.</p>
+        <ul class="mt-3 list-disc pl-6 space-y-2 text-slate-700">
+          <li>Qualified Foot Health Practitioner</li>
+          <li>Fully insured and DBS checked</li>
+          <li>Clean, clinical-grade equipment</li>
+          <li>Home visits for reduced mobility</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-brand-100 rounded-2xl p-6 shadow-soft">
+        <h3 class="font-bold text-xl pb-3">What clients say</h3>
+        <p class="text-slate-600">“Very gentle and explained everything clearly. My feet feel brand new.”</p>
+        <p class="text-slate-600 mt-2">“Booked on Sunday and seen on Monday at home — brilliant service.”</p>
+        <p class="text-slate-600 mt-2">“Gentle, thorough, and so patient — my feet have never felt better.”</p>
+        <p class="text-slate-600 mt-2">“Very professional and knowledgeable. I trust her completely with my diabetic foot checks.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Booking Form -->
+  <section id="contact" class="py-10">
+    <div class="max-w-4xl mx-auto px-5">
+      <h2 class="text-3xl font-extrabold">Book an appointment</h2>
+      <p class="mt-2 text-slate-600">Complete the form and I'll reply promptly. Prefer the phone? <a class="font-semibold text-brand-700 hover:underline" href="tel:+000000000">Call me</a> and I'll book for you.</p>
+
+      <form class="mt-5 bg-white border border-brand-100 rounded-2xl p-6 shadow-soft" aria-describedby="formHelp" onsubmit="return handleSubmit(event)">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="font-bold">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required class="mt-1 w-full rounded-xl border-2 border-brand-100 bg-white px-4 py-3 text-base focus:outline-none focus:ring-4 focus:ring-brand-300" />
+          </div>
+          <div>
+            <label for="email" class="font-bold">Email</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required class="mt-1 w-full rounded-xl border-2 border-brand-100 bg-white px-4 py-3 text-base focus:outline-none focus:ring-4 focus:ring-brand-300" />
+          </div>
+          <div class="md:col-span-2">
+            <label for="reason" class="font-bold">Reason for your visit</label>
+            <textarea id="reason" name="reason" required placeholder="Tell me briefly how I can help" class="mt-1 w-full rounded-xl border-2 border-brand-100 bg-white px-4 py-3 text-base min-h-[8rem] resize-y focus:outline-none focus:ring-4 focus:ring-brand-300"></textarea>
+          </div>
+          <div>
+            <label for="phone" class="font-bold">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" class="mt-1 w-full rounded-xl border-2 border-brand-100 bg-white px-4 py-3 text-base focus:outline-none focus:ring-4 focus:ring-brand-300" />
+            <small class="text-slate-600">Useful if you'd like a call back.</small>
+          </div>
+          <div>
+            <label for="contactpref" class="font-bold">Preferred contact</label>
+            <select id="contactpref" name="contactpref" class="mt-1 w-full rounded-xl border-2 border-brand-100 bg-white px-4 py-3 text-base focus:outline-none focus:ring-4 focus:ring-brand-300">
+              <option>Email</option>
+              <option>Phone</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="inline-flex items-start gap-3"><input type="checkbox" required class="mt-1" aria-describedby="privacy"/><span>I agree to be contacted about my booking.</span></label>
+            <div id="privacy" class="text-slate-600">Your details are kept private and never shared.</div>
+          </div>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <button class="inline-flex items-center justify-center rounded-full px-5 py-3 font-extrabold text-white bg-brand-500 hover:bg-brand-600 focus:outline-none focus:ring-4 focus:ring-brand-300" type="submit">Send request</button>
+          <a class="inline-flex items-center justify-center rounded-full px-5 py-3 font-extrabold border-2 border-brand-600 text-brand-700 bg-white hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-300" href="mailto:hello@example.com">Email instead</a>
+        </div>
+        <p id="formHelp" class="mt-2 text-slate-600">Online requests are monitored daily.</p>
+        <div id="formStatus" class="text-slate-700" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-labelledby="faqheading" class="py-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 id="faqheading" class="text-3xl font-extrabold">Frequently asked questions</h2>
+      <div class="mt-4 space-y-3">
+        <details class="bg-white border border-brand-100 rounded-2xl p-4 shadow-soft"><summary class="font-bold cursor-pointer">Do you visit patients at home?</summary><p class="mt-2 text-slate-600">Yes. Home visits are available for anyone who finds travel difficult. Just mention it when you book.</p></details>
+        <details class="bg-white border border-brand-100 rounded-2xl p-4 shadow-soft"><summary class="font-bold cursor-pointer">What should I prepare before a visit?</summary><p class="mt-2 text-slate-600">A comfortable chair and good lighting is helpful. Please remove nail polish if possible.</p></details>
+        <details class="bg-white border border-brand-100 rounded-2xl p-4 shadow-soft"><summary class="font-bold cursor-pointer">How long does an appointment take?</summary><p class="mt-2 text-slate-600">Most sessions last 30-45 minutes depending on your needs.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo" class="border-t border-brand-100 bg-brand-50">
+    <div class="max-w-7xl mx-auto px-5 py-6 text-slate-700">
+      <p><strong>Foot Health</strong> · Local, friendly foot care · <a class="font-semibold text-brand-700 hover:underline" href="tel:+000000000">Call 00000 000000</a> · <a class="font-semibold text-brand-700 hover:underline" href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>© <span id="y"></span> Foot Health. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <a class="fixed right-4 bottom-4 md:hidden inline-flex items-center justify-center rounded-full px-5 py-3 font-extrabold text-white bg-brand-600 hover:bg-brand-700 shadow-soft" href="#contact" aria-label="Book an appointment">Book</a>
+
+  <script>
+    // Accessible toggle for mobile nav
+    const btn = document.getElementById('navToggle');
+    const panel = document.getElementById('mobileNav');
+    const openIcon = document.getElementById('iconOpen');
+    const closeIcon = document.getElementById('iconClose');
+
+    const mobileHeader = document.getElementById('mobileNav');
+
+    function setOpen(isOpen) {
+      panel.dataset.open = isOpen ? 'true' : 'false';
+      btn.setAttribute('aria-expanded', String(isOpen));
+      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      openIcon.classList.toggle('hidden', isOpen);
+      closeIcon.classList.toggle('hidden', !isOpen);
+      mobileHeader.classList.toggle('hidden', !isOpen);
+    }
+
+    setOpen(false);
+
+    btn.addEventListener('click', () => setOpen(panel.dataset.open !== 'true'));
+
+    // Close when clicking a link or outside
+    panel.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+    document.addEventListener('click', (e) => {
+      if (!panel.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    });
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Thank you! Your request has been received. I will reply shortly.';
+      e.target.querySelector('button[type="submit"]').disabled = true;
+      return false;
+    }
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
