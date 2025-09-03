@@ -33,9 +33,13 @@ document.addEventListener('keydown', (e) => {
 });
 
 function scrollToSection(sectionId) {
-  document.getElementById(sectionId).scrollIntoView(true);
-}
+  var element = document.getElementById(sectionId);
+  var headerOffset = 80;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-function scrollToSection(sectionId) {
-  document.getElementById(sectionId).scrollIntoView(false);
+  window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+  });
 }
