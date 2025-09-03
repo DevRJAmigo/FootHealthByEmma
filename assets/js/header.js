@@ -31,3 +31,11 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') setOpen(false);
 });
+
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView(true);
+}
+
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView(false);
+}
