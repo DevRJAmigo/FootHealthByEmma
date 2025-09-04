@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-brand-50:  #effafa;
+  --color-brand-100: #d8f0f0;
+  --color-brand-300: #9cdad8;
+  --color-brand-500: #2aa3a5;
+  --color-brand-600: #1f8586;
+  --color-brand-700: #156b6c;
+
+  /* box shadow */
+  --shadow-soft: 0 10px 20px rgba(0,0,0,.06);
+
+  /* border radius */
+  --radius-xl2: 1.25rem;
+}
+
+html { 
+  font-size: 19px; 
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
